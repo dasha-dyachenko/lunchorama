@@ -1,0 +1,88 @@
+.description{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.day{
+    margin-top: 30px;
+    height: 118px;
+    width: 118px;
+    border: 1px stroke #979797;
+    border-radius: 8px;
+    background-color: white;
+    margin-left: 20px;
+}
+
+.day:hover{
+    margin-top: 30px;
+    background-color: #C3FC89;
+}
+
+.day.day-joined {
+    background-image: url(../img/checkmark.svg);
+    background-color: #C3FC89;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 5px;
+}
+
+.send-form{
+    margin-top: 45px;
+    width: 262px;
+    height: 60px;
+    background-color: #FF3333;
+    border-radius: 3px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.send-form:hover,
+.send-form:active {
+    background-color: #DE2727;
+}
+
+.weekday{
+    font-size: 23px;
+    color: black;
+}
+
+.date{
+    font-size: 14px;
+    color: black;
+}
+
+.location{
+    margin-top: 63px;
+    text-weight: bold;
+    margin-bottom: 60px;
+}
+
+.location select {
+    margin-top: 20px;
+}
+
+.location-dd {
+    width: 254px;
+    height: 55px;
+    background-color: #ffffff;
+    border: solid 1px #979797;
+    font-size: 20px;
+    text-align: center;
+    line-height: 55px;
+    padding: 10px;
+}
+
+select{
+    text-align: center;
+}
+
+.location-dd-item{
+    width: 254px;
+    height: 55px;
+    background-color: #ffffff;
+    border: solid 1px #979797;
+
+}

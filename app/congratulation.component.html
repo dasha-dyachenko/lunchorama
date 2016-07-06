@@ -1,0 +1,23 @@
+<h1 class="enjoy">You’re all set. Enjoy your <span class="uppercase">Lanchorama</span>!</h1>
+<div class="confirm-text">
+  <span>We will reconfirm with you the morning of your chosen dates.</span>
+  <br>
+  <span>1 hour in advance you will find out who you will have lunch with.</span>
+</div>
+
+<div class="lunch-header">
+  <span class="center">Your Lunchdates this week</span>
+</div>
+
+<div class="lunch-days">
+<span *ngFor="#lunch of lunch_days" class="booked-date">
+    <div *ngIf="lunch.join">
+      {{lunch.date | date: 'EEEE, dd.mm.yyyy' }}
+      <br>
+    </div>
+  </span>
+</div>
+
+<div class="change-dates">
+  <span>you can change your dates <a [routerLink]="['User', { id: userId }]">any time</a></span>
+</div>

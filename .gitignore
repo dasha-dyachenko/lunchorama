@@ -1,0 +1,12 @@
+.DS_Store
+.lock
+.rvmrc
+.vimrc
+.redcar
+.bundle
+.rbx
+.idea/
+.sass-cache/
+/bower_components
+/node_modules
+/.tmp

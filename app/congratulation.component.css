@@ -1,0 +1,45 @@
+.booked-date {
+    width: 311px;
+    height: 83px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+.your-location {
+    width: 216px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.center{
+    text-align: center;
+}
+
+.enjoy{
+    margin-top: 64px;
+    height: 27px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.confirm-text{
+    height: 66.3px;
+    font-size: 16px;
+}
+
+.lunch-header{
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.change-dates{
+    margin-top: 70px;
+    height: 20px;
+}
+
+.lunch-days{
+}
