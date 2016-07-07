@@ -12,7 +12,7 @@
 <div class="lunch-days">
 <span *ngFor="#lunch of lunch_days" class="booked-date">
     <div *ngIf="lunch.join">
-      {{lunch.date | date: 'EEEE, dd.mm.yyyy' }}
+      {{lunch.date | date: 'EEEE, dd.MM.yyyy' }}
       <br>
     </div>
   </span>

@@ -27,6 +27,9 @@ var CongratulationComponent = (function () {
         this.userService.getUser(this.userId, range).then(function (data) {
             _this.user = data;
             _this.lunch_days = _this.user.lunch_days;
+            _this.lunch_days.sort(function (a, b) {
+                return new Date(a.date).getTime() - new Date(b.date).getTime();
+            });
         });
     };
     CongratulationComponent = __decorate([

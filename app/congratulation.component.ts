@@ -29,6 +29,9 @@ export class CongratulationComponent{
         this.userService.getUser(this.userId, range).then((data) => {
             this.user = data;
             this.lunch_days = this.user.lunch_days;
+            this.lunch_days.sort((a ,b) => {
+                return new Date(a.date).getTime() - new Date(b.date).getTime();
+            });
         });
     }
 }
