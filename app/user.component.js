@@ -68,7 +68,6 @@ var UserComponent = (function () {
             curr.setDate(monday + i);
             var tmpDate = new Date(curr.getFullYear(), curr.getMonth(), curr.getDate(), 0, 0, 0);
             dates[i] = tmpDate;
-            console.log(dates[i]);
         }
         this.weekDays = [];
         this.weekDays[0] = { id: 0, value: false, name: 'Mo', date: dates[0] };

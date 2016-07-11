@@ -45,6 +45,10 @@ enableProdMode();
         path: '/error',
         name: 'Error',
         component: ErrorComponent
+    },
+    { 
+        path: '/**',
+        redirectTo: ['Unknown']
     }
 ])
 

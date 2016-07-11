@@ -9,7 +9,7 @@ export class UserService {
     constructor(private http: Http,
                 private router: Router) {}
 
-    private baseUrl = 'http://lunchorama.etventure-labs.com';  // URL to web api
+    private baseUrl = 'http://lunchorama.etventure-labs.com/api';  // URL to web api
 
     getLocations() {
         return this.http.get(this.baseUrl + '/locations')

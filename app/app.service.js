@@ -16,7 +16,7 @@ var UserService = (function () {
     function UserService(http, router) {
         this.http = http;
         this.router = router;
-        this.baseUrl = 'http://lunchorama.etventure-labs.com'; // URL to web api
+        this.baseUrl = 'http://lunchorama.etventure-labs.com/api'; // URL to web api
     }
     UserService.prototype.getLocations = function () {
         return this.http.get(this.baseUrl + '/locations')

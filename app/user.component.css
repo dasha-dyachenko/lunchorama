@@ -1,13 +1,14 @@
 .description{
     font-size: 18px;
     line-height: 22px;
+    padding: 0 10px;
 }
 
 .day{
     margin-top: 30px;
     height: 118px;
     width: 118px;
-    border: 1px stroke #979797;
+    border: 1px solid #979797;
     border-radius: 8px;
     background-color: white;
     margin-left: 20px;
@@ -25,6 +26,19 @@
     background-repeat: no-repeat;
     background-position-x: 5px;
     background-position-y: 5px;
+}
+
+select:focus,
+select:active,
+.day:focus,
+.day:active,
+.send-form:focus,
+.send-form:active{
+    outline: none !important;
+}
+
+.dat:active{
+    border: none;
 }
 
 .send-form{
@@ -73,7 +87,10 @@
     font-size: 20px;
     text-align: center;
     line-height: 55px;
-    padding: 10px;
+    padding:.75em 1em .5em 1em;
+    /*background-image: url(../img/arrow.png);*/
+    /*background-position: right;*/
+    /*background-repeat: no-repeat;*/
 }
 
 select{

@@ -3,23 +3,24 @@
   <div class="description">
     <span>Every weekday at <b>12:30 pm</b>, some randomly formed groups of colleagues in your </span>
     <br>
-    <span> company go for lunch together using <span class="uppercase">Lanchorama</span></span>
+    <span> company go for lunch together using <span class="uppercase">Lunchorama</span></span>
     <br>
-    <span>Let us schedule your next <span class="uppercase">Lanchorama</span> with some great minds.</span>
+    <span>Let us schedule your next <span class="uppercase">Lunchorama</span> with some great minds.</span>
   </div>
 
   <div *ngIf="selectedLocation" class="location">
     <label><b>Your location : </b></label>
     <br>
     <select [(ngModel)]="selectedLocation.id" class="location-dd">
-      <option *ngFor="#location of locations" value= {{location.id}} class="location-dd-item">
+      <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+      <option *ngFor="#location of locations" value={{location.id}} class="location-dd-item">
         {{location.name}}
       </option>
     </select>
   </div>
 
   <div class="description">
-    <b>Your <span class="uppercase">Lanchorama</span> days this week</b>
+    <b>Your <span class="uppercase">Lunchorama</span> days this week</b>
     <br>
     Please select the days you’re in for lunch
   </div>

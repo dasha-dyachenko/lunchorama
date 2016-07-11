@@ -51,6 +51,10 @@ var AppComponent = (function () {
                 path: '/error',
                 name: 'Error',
                 component: error_component_1.ErrorComponent
+            },
+            {
+                path: '/**',
+                redirectTo: ['Unknown']
             }
         ]), 
         __metadata('design:paramtypes', [])

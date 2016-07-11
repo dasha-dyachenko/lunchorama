@@ -79,7 +79,6 @@ export class UserComponent implements OnInit {
             curr.setDate(monday + i);
             var tmpDate = new Date(curr.getFullYear(), curr.getMonth(), curr.getDate(), 0, 0, 0);
             dates[i] = tmpDate;
-            console.log(dates[i]);
         }
 
         this.weekDays = [];
