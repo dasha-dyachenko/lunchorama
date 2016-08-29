@@ -64,10 +64,12 @@ var UserComponent = (function () {
         var monday = this.dateService.getStartDate();
         var dates = [];
         var dateStrings = [];
+        var tmp = monday;
         for (var i = 0; i < 5; i++) {
-            curr.setDate(monday + i);
+            curr.setDate(tmp);
             var tmpDate = new Date(curr.getFullYear(), curr.getMonth(), curr.getDate(), 0, 0, 0);
             dates[i] = tmpDate;
+            tmp = tmpDate.getDate() + 1;
         }
         this.weekDays = [];
         this.weekDays[0] = { id: 0, value: false, name: 'Mo', date: dates[0] };

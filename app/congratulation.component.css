@@ -29,6 +29,7 @@
 .confirm-text{
     height: 66.3px;
     font-size: 16px;
+    margin-top: 50px;
 }
 
 .lunch-header{
@@ -39,6 +40,7 @@
 .change-dates{
     margin-top: 70px;
     height: 20px;
+    margin-bottom: 20px;
 }
 
 .lunch-days{
