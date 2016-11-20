@@ -57,6 +57,14 @@ var UserService = (function () {
             .then(function (response) { return response; })
             .catch(this.handleError);
     };
+    UserService.prototype.getOrders = function () {
+        var headers = new http_1.Headers();
+        headers.append('Content-Type', 'application/json');
+        return this.http.get('https://api.staging.rbn.etventure-labs.com/purchase_orders/', { headers: headers })
+            .toPromise()
+            .then(function (response) { return console.log('!!!!!!', response); })
+            .catch(this.handleError);
+    };
     UserService.prototype.goToState = function (stateName) {
         this.router.navigate([stateName]);
     };

@@ -1,16 +1,13 @@
 <div *ngIf="user">
-  <h1>Hey {{user.name}}!</h1>
+  <div class="title">Hey {{user.name}}!</div>
   <div class="description">
-    <span>Every weekday at <b>12:30 pm</b>, some randomly formed groups of colleagues in your </span>
+    <span>Every weekday at 12:30 pm, some randomly formed groups of </span>
     <br>
-    <span> company go for lunch together using <span class="uppercase">Lunchorama</span></span>
-    <br>
-    <span>Let us schedule your next <span class="uppercase">Lunchorama</span> with some great minds.</span>
+    <span> colleagues in your company go for lunch together.</span>
   </div>
 
   <div *ngIf="selectedLocation" class="location">
-    <label><b>Your location : </b></label>
-    <br>
+    <label class="location-label">Your location</label>
     <select [(ngModel)]="selectedLocation.id" class="location-dd">
       <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
       <option *ngFor="#location of locations" value={{location.id}} class="location-dd-item">
@@ -19,18 +16,23 @@
     </select>
   </div>
 
-  <div class="description">
-    <b>Your <span class="uppercase">Lunchorama</span> days this week</b>
-    <br>
-    Please select the days you’re in for lunch
+  <div class="days-label">
+    Select the days you’re in for lunch
   </div>
 
   <div class="weekdays" *ngIf="weekDays">
     <button class="day" *ngFor="let day of weekDays" (click)="toggleDateValue(day)" [ngClass]="{'day-joined': day.value }">
       <span class="weekday">{{day.name}}</span><br>
       <span class="date">{{day.date | date: 'd MMM' }}</span>
+      <div class="accepted"></div>
     </button>
   </div>
 
-  <button class="send-form" (click)="sendData()">Send me out for lunch</button>
+  <div class="repeat-section" (click)="toggleRepeat()">
+    <div class="checkbox" ngClass="{'checked': isChecked}" ></div>
+    <span>Repeat every week</span>
+  </div>
+  <button class="send-button" (click)="sendData()">Save days</button>
+
+  <span class="unsubscribe">Unsubscribe from weekly reminders in slack</span>
 </div>

@@ -1,100 +1,36 @@
+.title{
+    margin-top: 75px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
 .description{
-    font-size: 18px;
+    margin-top: 15px;
     line-height: 22px;
     padding: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.day{
-    margin-top: 30px;
-    height: 118px;
-    width: 118px;
-    border: 1px solid #979797;
-    border-radius: 8px;
-    background-color: white;
-    margin-left: 20px;
+.location{
+    margin-top: 19px;
+    text-weight: bold;
 }
 
-.day:hover{
-    margin-top: 30px;
-    background-color: #C3FC89;
-}
-
-.day.day-joined {
-    background-image: url(../img/checkmark.svg);
-    background-color: #C3FC89;
-    background-size: 100px 100px;
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 5px;
-}
-
-select:focus,
-select:active,
-.day:focus,
-.day:active,
-.send-form:focus,
-.send-form:active{
-    outline: none !important;
-}
-
-.dat:active{
-    border: none;
-}
-
-.send-form{
-    margin-top: 45px;
-    margin-bottom: 30px;
-    width: 262px;
-    height: 60px;
-    background-color: #FF3333;
-    border-radius: 3px;
-    color: white;
-    border: none;
+.location-label{
     font-size: 16px;
     font-weight: bold;
 }
 
-.send-form:hover,
-.send-form:active {
-    background-color: #DE2727;
-}
-
-.weekday{
-    font-size: 23px;
-    color: black;
-}
-
-.date{
-    font-size: 14px;
-    color: black;
-}
-
-.location{
-    margin-top: 63px;
-    text-weight: bold;
-    margin-bottom: 60px;
-}
-
-.location select {
-    margin-top: 20px;
-}
-
 .location-dd {
-    width: 254px;
-    height: 55px;
-    background-color: #ffffff;
-    border: solid 1px #979797;
-    font-size: 20px;
-    text-align: center;
+    border: transparent;
+    background-color: transparent;
+    border-bottom: solid 1px white;
+    font-size: 16px;
+    color: white;
     line-height: 55px;
-    padding:.75em 1em .5em 1em;
-    /*background-image: url(../img/arrow.png);*/
-    /*background-position: right;*/
-    /*background-repeat: no-repeat;*/
-}
-
-select{
-    text-align: center;
+    padding-bottom: 5px;
+    margin-left: 30px;
 }
 
 .location-dd-item{
@@ -103,4 +39,117 @@ select{
     background-color: #ffffff;
     border: solid 1px #979797;
 
+}
+
+.days-label{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 38px;
+}
+
+.day{
+    border-radius: 50%;
+    width: 123px;
+    height: 123px;
+    margin-top: 30px;
+    border: 3px solid #e68d00;
+    background-color: #ffa100;
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.day:hover{
+    margin-top: 30px;
+    background-color: #e68d00;
+}
+
+.day.day-joined {
+    background-color: #00e1ab;
+    border-color: #94ffd7;
+}
+
+.day.day-joined .accepted{
+    background-image: url(../img/accepted.svg);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 50px;
+    top: 87px;
+}
+
+.weekday{
+    font-size: 23px;
+}
+
+.date{
+    font-size: 14px;
+}
+
+.date:active{
+    border: none;
+}
+
+.repeat-section{
+    margin-top: 22px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.repeat-section .checkbox{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    top: 5px;
+    margin-right: 5px;
+    position: relative;
+    background-image: url(../img/checkbox.svg);
+}
+
+.repeat-section:hover .checkbox,
+.repeat-section .checkbox.checked{
+    background-image: url(../img/checkbox-active.svg);
+}
+
+.send-button{
+    margin-top: 21px;
+    margin-bottom: 30px;
+    width: 197px;
+    height: 46px;
+    background-color: transparent;
+    border-radius: 3px;
+    color: white;
+    border: 1px white solid;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.send-button:hover,
+.send-button:active {
+    background-color: #00e1ab;
+}
+
+select:focus,
+select:active,
+.day:focus,
+.day:active,
+.send-button:focus,
+.send-button:active{
+    outline: none !important;
+}
+
+.unsubscribe{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 200;
+    position: absolute;
+    bottom: 10px;
+    left: 26px;
+    cursor: pointer;
+}
+
+.unsubscribe:hover{
+   text-decoration: underline;
 }

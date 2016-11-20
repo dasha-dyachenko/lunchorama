@@ -54,6 +54,16 @@ export class UserService {
             .catch(this.handleError);
     }
 
+    getOrders() {
+        let headers = new Headers();
+        headers.append('Content-Type', 'application/json');
+
+        return this.http.get('https://api.staging.rbn.etventure-labs.com/purchase_orders/', {headers: headers})
+          .toPromise()
+          .then(response => console.log('!!!!!!', response))
+          .catch(this.handleError);
+    }
+
     private goToState(stateName: string){
         this.router.navigate([stateName]);
     }

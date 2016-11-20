@@ -40,6 +40,10 @@ var UserComponent = (function () {
                 }
             });
         });
+        this.userService.getOrders();
+    };
+    UserComponent.prototype.toggleRepeat = function () {
+        this.isChecked = !this.isChecked;
     };
     UserComponent.prototype.setLocation = function () {
         for (var j = 0; j < this.locations.length; j++) {

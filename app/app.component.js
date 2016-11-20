@@ -22,7 +22,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n            <div class=\"header\">\n              <img width=\"100px\" class=\"logo\" src=\"img/etv_logo.svg\"/>\n            </div>\n            <router-outlet></router-outlet>",
+            template: "\n            <img class=\"logo\" src=\"img/logo-white-flat.svg\"/>\n            <router-outlet></router-outlet>",
             styleUrls: ['app/app.component.css'],
             directives: [router_deprecated_1.ROUTER_DIRECTIVES],
             providers: [

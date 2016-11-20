@@ -12,9 +12,7 @@ enableProdMode();
 @Component({
     selector: 'my-app',
     template: `
-            <div class="header">
-              <img width="100px" class="logo" src="img/etv_logo.svg"/>
-            </div>
+            <img class="logo" src="img/logo-white-flat.svg"/>
             <router-outlet></router-outlet>`,
     styleUrls:  ['app/app.component.css'],
     directives: [ROUTER_DIRECTIVES],

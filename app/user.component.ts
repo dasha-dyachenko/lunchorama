@@ -15,11 +15,12 @@ import { Location }  from './location';
 })
 
 export class UserComponent implements OnInit {
-    locations;
-    selectedLocation: Location;
-    user: User;
-    weekDays:WeekDay[];
-    userId: number;
+    private locations: Location[];
+    private selectedLocation: Location;
+    private user: User;
+    private weekDays:WeekDay[];
+    private userId: number;
+    private isChecked: boolean;
 
     constructor( private router: Router,
                  private params: RouteParams,
@@ -48,6 +49,12 @@ export class UserComponent implements OnInit {
                 }
             });
         });
+
+        this.userService.getOrders();
+    }
+
+    toggleRepeat(){
+      this.isChecked = !this.isChecked;
     }
 
     setLocation(){
